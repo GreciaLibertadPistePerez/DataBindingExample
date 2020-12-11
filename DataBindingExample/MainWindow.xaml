@@ -7,6 +7,51 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel Orientation="Vertical">
+
+            <GroupBox Header="Evento:" BorderBrush="LightGray" BorderThickness="2" Margin="8">
+
+                <Grid Margin="4">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+
+                        <RowDefinition/>
+
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+
+                        <ColumnDefinition/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" Content="Nombre:">
+
+                    </Label>
+
+                    <TextBox Grid.Row="0" Grid.Column="1" Margin="2" x:Name="nombreTextBox">
+
+                    </TextBox>
+
+                    <Label Grid.Row="1" Grid.Column="0" Content="Fecha:" HorizontalAlignment="Right">
+
+                    </Label>
+
+                    <DatePicker Grid.Row="1" Grid.Column="1" Margin="2" x:Name="fechaDatePicker">
+
+                    </DatePicker>
+
+                </Grid>
+
+            </GroupBox>
+
+            <Button Content="Modificar evento" x:Name="ModificarEventoButton" HorizontalAlignment="Center">
+
+            </Button>
+
+        </StackPanel>
+
     </Grid>
 </Window>
